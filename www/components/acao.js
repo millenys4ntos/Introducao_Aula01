@@ -35,4 +35,3 @@ $(document).on("click", "#dividir", function(){
 
   $("#resultado").val(resultado);
 })
-
