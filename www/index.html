@@ -4,26 +4,80 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
 
+  <!-- scripts -->
+  <script src="components/loader.js"></script>
+  <script src="lib/jquery-3.6.0.min.js"></script>
+  <script src="components/acao.js"></script>
+
+  <!-- estilos -->
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
-
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
   </script>
 </head>
 <body>
-  This is a template for Onsen UI app.
+  <div class="container"></div>
+   <div class="row">
+    	<div class= col-12>
+        <div class="jumbontron"></div>
+        <h2> Calcular </h2>
+      	</div>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+        <label for=""> Valor 1: </label>
+         <input type="number" class="form-control" id="valor 1">
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+        <label for=""> Valor 2: </label>
+         <input type="number" class="form-control" id="valor 2">
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+      <button class="btn btn-primary btn-block" id="somar"> Somar </button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+      <button class="btn btn-primary btn-block" id="subtrair"> Subtrair </button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+      <button class="btn btn-primary btn-block" id="multiplicar"> Multiplicar </button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+      <button class="btn btn-primary btn-block" id="dividir"> Dividir </button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+     <div class="col-12">
+      <div class="form-group">
+        <label for=""> Resultado: </label>
+         <input type="number" class="form-control" readonly id="resultado">
+      </div>
+    </div>
+ </div>
 </body>
 </html>
